@@ -1,4 +1,4 @@
-This is a quick-start guide to mpi4py to run simple scripts, e.g. for making plots in parallel. Setup instructions along with some example scripts are provided in this repo. No `sudo` required.
+This is a quick-start guide to `mpi4py` to run simple scripts, e.g. for making plots in parallel. Setup instructions along with some example scripts are provided in this repo. No `sudo` required.
 
 - [Setup](#setup)
     - [Anaconda](#anaconda)
@@ -51,10 +51,7 @@ conda install -c conda-forge openmpi=4.1.4=ha1ae619_100
 ```
 You can also build OpenMPI from source by following their [instructions](https://docs.open-mpi.org/en/v5.0.x/installing-open-mpi/quickstart.html)
 
-```diff
-! Note the specific build hash (ha1ae619_100, from July, 2022) when installing openmpi. The 'stable' 4.1.3 & 4.1.4 fail to install essential libraries, making MPI unusable.
-```
-
+*Note the specific build hash (ha1ae619_100, from July, 2022) when installing openmpi. The 'stable' 4.1.3 & 4.1.4 fail to install essential libraries, making MPI unusable.*
 ### mpi4py
 
 ```bash
@@ -78,9 +75,7 @@ Altenatively you can check the number of threads with
 htop
 ```
 
-```diff
-! Note: cores and threads are different, with modern machines typically having 2 threads per core.
-```
+*Note: cores and threads are different, with modern machines typically having 2 threads per core.*
 
 ### Run
 
