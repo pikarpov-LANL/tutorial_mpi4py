@@ -1,8 +1,15 @@
-# Tutorial on `mpi4py`
-
 This is a quick-start guide to mpi4py to run simple scripts, e.g. for making plots in parallel. Setup instructions along with some example scripts are provided in this repo. No `sudo` required.
 
-## Setup
+- [Setup](#setup)
+    - [Anaconda](#anaconda)
+    - [Python](#python)
+    - [OpenMPI](#openmpi)
+    - [mpi4py](#mpi4py)
+- [Running Examples](#running-examples)
+    - [Check the CPUs](#check-the-cpus)
+    - [Run](#run)
+
+# Setup
 
 ### Anaconda
 To simplifying installation and to setup our workspace, let's install Anaconda. You can download it straight from the official website of [Anaconda](https://www.anaconda.com/products/distribution). 
@@ -57,7 +64,7 @@ conda install -c conda-forge mpi4py
 If you don't want to use `conda`, or would like to use MPICH/Microsoft MPI, follow [mpi4py's Documentation](https://pypi.org/project/mpi4py/).
 
 
-## Running Examples
+# Running Examples
 
 ### Check the CPUs
 To run an example in parallel, first you should check how many threads are available on your machine. You can do that via 
