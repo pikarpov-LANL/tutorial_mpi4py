@@ -64,22 +64,27 @@ If you don't want to use `conda`, or would like to use MPICH/Microsoft MPI, foll
 # Running Examples
 
 ### Check the CPUs
-To run an example in parallel, first you should check how many threads are available on your machine. You can do that via 
+To run an example in parallel, first you should check how many **cores** (<ins>not</ins> threads) are available on your machine. You can do that via 
 ```bash
 lscpu
 ```
-Look at the 5th line form the top labeled 'CPU(s):'
+Look at the 12th line form the top labeled `Core(s) per socket:`
 
-Altenatively you can check the number of threads with
-```bash
-htop
-```
-
-*Note: cores and threads are different, with modern machines typically having 2 threads per core.*
+*Note: cores and threads are different; modern CPUs typically have 2 threads per core.*
 
 ### Run
 
-To run in paralle, you need to specify how many thread to give to the process. Below, the cript will be run with 4 threads.
+To run in parallel, you need to specify how many cores to give to the process. Below, the cript will be run on 4 cores.
 ```bash
-mpirun -n 4 python demo.py
+mpirun -n 4 python simple_demo.py
 ```
+Below is a table describing each demo provided in this tutorial.
+
+| Demo        | Description                                                              |
+| :---------- | :----------------------------------------------------------------------- |
+| simple_demo | basic test of correct installation                                       |
+| plot_demo   | independent `for` loop parallelization with plotting                     |
+| comm_demo   | communication demo presenting `send`, `receive`, `gather`, and `barrier` |
+
+If you want to parallelize a code with only *some* independent loops, use the `comm_demo` for guidence.
+
