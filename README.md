@@ -51,7 +51,7 @@ conda install -c conda-forge openmpi=4.1.4=ha1ae619_100
 ```
 You can also build OpenMPI from source by following their [instructions](https://docs.open-mpi.org/en/v5.0.x/installing-open-mpi/quickstart.html)
 
-> :warning: Note the specific build hash (ha1ae619_100, from July, 2022) when installing openmpi. The 'stable' 4.1.3 & 4.1.4 fail to install essential libraries, making MPI unusable.
+> :warning: Note the specific build hash (`ha1ae619_100`, from July, 2022) when installing openmpi. The "stable" 4.1.3 & 4.1.4 fail to install essential libraries, making MPI unusable.
 ### mpi4py
 
 ```bash
@@ -70,7 +70,7 @@ lscpu
 ```
 Look at the 12th line form the top labeled `Core(s) per socket:`
 
-> :warning: Note: cores and threads are different; modern CPUs typically have 2 threads per core.
+> :warning: Cores and Threads are different; modern CPUs typically have 2 threads per core.
 
 ### Run
 
