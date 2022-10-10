@@ -8,6 +8,7 @@ This is a quick-start guide to `mpi4py` to run simple scripts, e.g. for making p
 - [Running Examples](#running-examples)
     - [Check the CPUs](#check-the-cpus)
     - [Run](#run)
+    - [Additional Info](#additional-info)
 
 # Setup
 
@@ -74,17 +75,22 @@ Look at the 12th line form the top labeled `Core(s) per socket:`
 
 ### Run
 
-To run in parallel, you need to specify how many cores to give to the process. Below, the cript will be run on 4 cores.
+To run in parallel, you need to specify how many cores to give to the process. The following command will run the script on 4 cores.
 ```bash
 mpirun -n 4 python simple_demo.py
 ```
 Below is a table describing each demo provided in this tutorial.
 
-| Demo        | Description                                                              |
-| :---------- | :----------------------------------------------------------------------- |
-| simple_demo | basic test of correct installation                                       |
-| plot_demo   | independent `for` loop parallelization with plotting                     |
-| comm_demo   | communication demo presenting `send`, `receive`, `gather`, and `barrier` |
+| Demo        | Description                                                               |
+| :---------- | :------------------------------------------------------------------------ |
+| simple_demo | basic test of correct installation                                        |
+| plot_demo   | independent `for` loop parallelization with plotting                      |
+| comm_demo   | communication demo presenting `bcast`, `scatter`, `gather`, and `Barrier` |
 
 If you want to parallelize a code with only *some* independent loops, use the `comm_demo` for guidence.
 
+### Additional Info
+
+For the full list of commands, refer to official [mpi4py documentation](https://mpi4py.readthedocs.io/en/stable/tutorial.html)
+
+I found [mpitutorial.com](https://mpitutorial.com/) to be quite useful. It is not specifically on `mpi4py`, but rather MPI in general. In aprticular, during the workshop I presented the diagrams from their tutorials on [Barrier & Bcast](https://mpitutorial.com/tutorials/mpi-broadcast-and-collective-communication/) and [Scatter & Gather](https://mpitutorial.com/tutorials/mpi-scatter-gather-and-allgather/).
