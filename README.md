@@ -5,6 +5,7 @@ This is a quick-start guide to `mpi4py` to run simple scripts, e.g. for making p
     - [Python](#python)
     - [OpenMPI](#openmpi)
     - [mpi4py](#mpi4py)
+    - [numpy & matplotlib](#numpy--matplotlib)
 - [Running Examples](#running-examples)
     - [Check the CPUs](#check-the-cpus)
     - [Run](#run)
@@ -61,6 +62,12 @@ conda install -c conda-forge mpi4py
 
 If you don't want to use `conda`, or would like to use MPICH/Microsoft MPI, follow [mpi4py's Documentation](https://pypi.org/project/mpi4py/).
 
+### numpy & matplotlib
+You might need to install numpy & matplotlib into your virtual environment:
+```bash
+pip isntall numpy
+pip install matplotlib
+```
 
 # Running Examples
 

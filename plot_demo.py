@@ -17,8 +17,8 @@ rank = comm.Get_rank()
 # let's say we need to produce plots from 20 datasets
 # using 4 threads, meaning 5 plots per thread
 
-start_pool = np.array([0,5,10,15])
-end_pool = start_pool+5
+start_pool = np.array([0,2,4,6])
+end_pool = start_pool+2
 
 start = start_pool[rank]
 end = end_pool[rank]
