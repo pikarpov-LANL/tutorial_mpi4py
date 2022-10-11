@@ -38,7 +38,7 @@ if rank == 0:
     numfiles = 8
     print(f"Number of files: {numfiles}")
     
-    # we will prepare the interval indexes for erach rank to execute
+    # we will prepare the interval indexes for each rank to execute
     interval_size = int(numfiles/size)
     print(f"Interval size:   {interval_size}")
     

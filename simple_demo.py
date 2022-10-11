@@ -1,5 +1,4 @@
-# This is the simplest example of how to use mpi4py
-# to print from each thread in parallel
+# "Hello World" in parallel from mpi4py
 #
 # -pikarpov
 
