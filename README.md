@@ -6,6 +6,7 @@ This is a quick-start guide to `mpi4py` to run simple scripts, e.g. for making p
     - [OpenMPI](#openmpi)
     - [mpi4py](#mpi4py)
     - [numpy & matplotlib](#numpy--matplotlib)
+    - [Troubleshoot](#troubleshoot)
 - [Running Examples](#running-examples)
     - [Check the CPUs](#check-the-cpus)
     - [Run](#run)
@@ -67,6 +68,15 @@ You might need to install numpy & matplotlib into your virtual environment:
 ```bash
 pip isntall numpy
 pip install matplotlib
+```
+
+### Troubleshoot
+
+During the workshop, folks on Mac had trouble installing OpenMPI from conda-forge channel. If you are exeprience a similar problem, you can default to python 3.8 and run the following:
+```bash
+conda create -n py38 python=3.8
+conda activate py38
+conda install openmpi
 ```
 
 # Running Examples
